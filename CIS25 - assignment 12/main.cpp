@@ -10,6 +10,7 @@ using namespace std;
 
 int main()
 {
+    // initializing variables
     unsigned long long fact=1;
     int num;
     
@@ -24,6 +25,7 @@ int main()
     
     for (int i=1; i<=num; ++i)
     {
+        // formula for factorials
         fact*= i;
     }
     
