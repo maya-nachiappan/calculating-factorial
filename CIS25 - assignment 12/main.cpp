@@ -11,24 +11,26 @@ using namespace std;
 int main()
 {
     // initializing variables
-    unsigned long long fact=1;
+    unsigned long long fact=1.0;
     int num;
     
-    cout << "enter a positive number: " << endl;
+    cout << "Enter a positive number: " << endl;
     cin >> num;
     
     if (num<0) // checks if number entered is less than 0
     {
-        cout << "that is not a positive number" << endl;
+        cout << "That is not a positive number, please try again." << endl;
         return 1;
     }
     
-    for (int i=1; i<=num; ++i) // exectutes for loop to multiply each number in factorial
-    {
-        // formula for factorials
-        fact*= i;
+    else{
+        for (int i=1; i<=num; i++) // exectutes for loop to multiply each number in factorial
+        {
+            // formula for factorials
+            fact*= i;
+        }
+        
+        cout << "The factorial of "<< num <<  " is " << fact << endl; // prints factorial
     }
-    
-    cout << "the factorial of the number is: " << fact << endl; // prints factorial
     return 0;
 }
